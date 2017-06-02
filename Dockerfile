@@ -2,7 +2,7 @@ FROM rhel7:latest
 MAINTAINER Anthony Green <green@redhat.com>
 
 # Update the image with the bits that we need
-RUN rpm -ivh https://dl.fedoraproject.org/pub/epel/7/x86_64/e/epel-release-7-5.noarch.rpm
+RUN rpm -ivh https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm 
 RUN yum -y update
 RUN yum install -y openssh-server mock rpm-build git subversion cvs make createrepo autoconf
 
